@@ -11,7 +11,7 @@ export default function ItemsAccordion({items}) {
         {
             items.map((item) => {
                 return (
-                <Accordion key={item.id}>
+                <Accordion key={item.id} data-test={`accordian-item-${item.id}`}>
                     <AccordionSummary
                       expandIcon={<ExpandMoreIcon />}
                       id="panel1a-header"
